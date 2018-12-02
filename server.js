@@ -36,13 +36,13 @@ app.get('/dadjokes/:keyword', (req, res) => {
       })
       .end()
       .then(function(result) {
-        return result.slice(1, 10);
+        return result.slice(1, 11);
       })
-      .then(function(images) {
+      .then(function (images) {
         res.json(images);
       })
-      .catch(function(error) {
-        Console.error('Search failed',error);
+      .catch(function (error) {
+        console.error('Search failed', error);
       })
   }
 
